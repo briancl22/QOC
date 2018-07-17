@@ -14,6 +14,7 @@ module load fftw/3.3.5-intelmpi
 module load gsl/1.16
 module load libxc/2.2.1-intelmpi
 
+#---------------------------------------------------------------------------------------------------------------------------------------
 # Groundstate Job
 
 echo 'gs_Started' >> STATUSV
@@ -27,6 +28,7 @@ mpirun -np ${NP} /project01/borundagroup/local_octopus/octopus-7.2/mpicc/bin/oct
 echo gs_Done >> STATUSV
 date >> STATUSV
 
+#---------------------------------------------------------------------------------------------------------------------------------------
 # Time-Dependent Job
 
 echo 'td_Started' >> STATUSV
